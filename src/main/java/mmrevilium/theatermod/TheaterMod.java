@@ -1,5 +1,6 @@
 package mmrevilium.theatermod;
 
+import mmrevilium.theatermod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,7 +12,7 @@ public class TheaterMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-//test
-		LOGGER.info("Does it work?");
+
+		ModItems.registerModItems();
 	}
 }
